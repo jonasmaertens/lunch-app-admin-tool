@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" style="width: 100%;" alt="My Logo">
+            <p>Checkito Lunch</p>
+        </div>
+    </header>
+    <div class="formwrapper">
+        <form method="POST" enctype="multipart/form-data" autocomplete="off">
+            
+            <div class="c24FormWrapper">
+            
+            <div class="c24InputWrapper">
+                <label for="gericht_name">Name des Gerichts</label>
+                <input type="text" id="gericht_name" name="gericht_name" required>
+            </div>
+            <div class="c24InputWrapper">
+                <label for="zubereitung">Beschreibung</label>
+                <textarea rows="3" id="zubereitung" name="zubereitung"></textarea>
+            </div>
+            <label>Tags</label>
+            <div class="tags">
+                <a class="tag add_tag">+</a>
+            </div>
+            <div class="fileUploadWrapper">
+                <label class="fileUploadLabel">
+                    <input type="file" name="gerichtBild" id="fileUploadInput">
+                    <span>Bild hochladen</span>
+                </label>
+                <div class="fileUploadPreviewWrapper">
+                    <img class="fileUploadPreview">
+                </div>
+            </div>
+            <input type="submit" name="submit" value="Speichern">
+        </div>
+        </form>
+    </div>
+    <div class="formwrapper">
+        <div class="background-div">
+            <div class="c24InputWrapper">
+                <label for="gericht_name">Gericht suchen</label>
+                <input type="text" id="gericht_suche" name="gericht_suche" required>
+            </div>
+            <ul class="custom-list">
+                <li>
+                    <img src="brownie.jpg" alt="Gericht 2">
+                    <div class="list-content">
+                        <h2 class="list-text">Gericht</h2>
+                        <p class="list-text">Some description of item.</p>
+                    </div>
+                    <div class="list-number">
+                        <h1>Anzahl: 9</h1>
+                    </div>
+                    <button>
+                        Edit
+                    </button>
+                </li>
+        
+                <li>
+                    <img src="brownie.jpg" alt="Gericht 2">
+                    <div class="list-content">
+                        <h2 class="list-text">Gericht</h2>
+                        <p class="list-text">Some description of item.</p>
+                    </div>
+                    <div class="list-number">
+                        <h1>Anzahl: 9</h1>
+                    </div>
+                    <button>
+                        Edit
+                    </button>
+                </li>    
+                <!-- Add more list items as needed -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
